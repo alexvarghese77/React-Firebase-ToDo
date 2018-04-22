@@ -10,3 +10,9 @@
     background-color: #eed; 
     padding:10px 10px 38px 34px;
 }
+.closeBtn{
+    float: right;
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}

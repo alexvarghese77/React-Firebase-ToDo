@@ -20,7 +20,7 @@ constructor(props){
   }
 }
 componentWillMount(){
-  const previousNotes=this.state.notes;
+  let previousNotes=this.state.notes;
   this.database.on('child_added', snap => {
     previousNotes.push({
       id: snap.key,
@@ -30,6 +30,20 @@ componentWillMount(){
       notes:previousNotes
     })
 
+  })
+
+  this.database.on('child_removed', snap => {
+    for(var i=0; i < previousNotes.length; i++){
+      if(previousNotes[i].id === snap.key){
+        previousNotes.splice(i, 1);
+      }
+    }
+    // previousNotes=previousNotes.filter((item)=>{
+    //   item.id !== snap.key
+    //})
+    this.setState({
+      notes: previousNotes
+    })
   })
  
 }
@@ -42,7 +56,10 @@ componentWillMount(){
     // })
     this.database.push().set({noteContent:values})
   }
-  
+  delNote(id){
+    this.database.child(id).remove();
+    console.log(id)
+  }
 
   render() {   
     return (
@@ -52,7 +69,7 @@ componentWillMount(){
         </div>
         {
           this.state.notes.map((item,i)=>{
-            return <Note noteContent={item.noteContent} noteId={item.id} key={i}/>
+            return <Note noteContent={item.noteContent} noteId={item.id} key={i} delNote={this.delNote.bind(this)}/>
             
           })
         }  
