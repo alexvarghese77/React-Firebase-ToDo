@@ -26,14 +26,15 @@ componentWillMount(){
       id: snap.key,
       noteContent: snap.val().noteContent,
     })
+     this.setState({
+      notes:previousNotes
+    })
+
   })
-  this.setState({
-    notes:previousNotes
-  })
+ 
 }
 
   addnote(values){
-    // debugger;
     // var previousNotes=this.state.notes;
     // var newNote=[...previousNotes,{noteContent: values, noteId: previousNotes.length+1}]
     // this.setState({
@@ -41,12 +42,9 @@ componentWillMount(){
     // })
     this.database.push().set({noteContent:values})
   }
+  
 
-  render() {
-
-   
-
-   
+  render() {   
     return (
       <div className="App">
         <div className="head">
@@ -54,9 +52,8 @@ componentWillMount(){
         </div>
         {
           this.state.notes.map((item,i)=>{
-            return(
-              <Note noteContent={item.noteContent} noteId={item.noteId} key={i}/>
-            )
+            return <Note noteContent={item.noteContent} noteId={item.id} key={i}/>
+            
           })
         }  
         <div className="footer">
