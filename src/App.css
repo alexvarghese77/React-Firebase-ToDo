@@ -16,8 +16,14 @@ body{
   position: relative;
 
 }
-.notesFooter {
-  display: flex;
-  flex: 1 1 5%;
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  height: 30px;
 }
