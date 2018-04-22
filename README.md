@@ -1,5 +1,7 @@
 #react-firebase-notes-app
+
 ###Summary
+
 A simple CRUD application to explore React and Firebase interaction. provides the ability for a user to add and remove notes from a Firebase database. This project is also integrated with travis CI for continous integration
 
 Setup
