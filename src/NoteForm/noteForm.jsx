@@ -36,16 +36,13 @@ export default class NoteForm extends Component{
        
      
         return(
-            <div className="notewrappercontainer">
-            <div className="spacer"> </div>
-            <div className="notewrpper">
-
-                <input type="text" className="noteInput" placeholder="Add new note" onChange={this.notechanged.bind(this)} value={this.state.notetyped}/>
-                 <button className="button" onClick={this.addNote.bind(this)}>Add Note</button>
-            </div>
-            <div className="spacer"></div>
-            </div>
-            
+            <div className="formWrapper">
+            <input className="noteInput"
+            placeholder="Write a new note..."
+            onChange={this.notechanged.bind(this)} value={this.state.notetyped} />
+            <button className="noteButton"
+            onClick={this.addNote.bind(this)}>Add Note</button>
+        </div>
         )
     }
 }
