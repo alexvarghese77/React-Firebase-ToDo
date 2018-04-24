@@ -57,4 +57,13 @@ body {
   display: flex;
   flex: 1 1 10%;
   background-color: rgba(0,0,0,0.5);
+<<<<<<< HEAD
 }
+=======
+  text-align: center;
+  height: 100px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+>>>>>>> 6e0937523d53d09edd4d35c27271ce5cd92b615a
