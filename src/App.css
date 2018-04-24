@@ -30,7 +30,7 @@ body,html{
 .footer {
   background-color: rgba(0,0,0,0.5);
   text-align: center;
-  height: 30px;
+  height: 100px;
   bottom: 0;
   position: absolute;
   width: 100%;
