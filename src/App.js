@@ -67,12 +67,14 @@ componentWillMount(){
         <div className="head">
         TO Do
         </div>
+        <div className="container">
         {
           this.state.notes.map((item,i)=>{
             return <Note noteContent={item.noteContent} noteId={item.id} key={i} delNote={this.delNote.bind(this)}/>
             
           })
         }  
+        </div>
         <div className="footer">
         <NoteForm addnote={this.addnote.bind(this)}/>
         </div>

@@ -3,27 +3,35 @@ body{
   background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)) ,url('./img/1.jpg')
 
 }
-.head{
+body,html{
   width: 100%;
+  height: 100%;
+}
+.App{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.head{
   height: 70px;
-  margin-bottom: 5px;
   background-color: rgba(0,0,0,0.5);
   font-family: 'Gamja Flower', sans-serif;
   color: white;
   font-size: 50px;
   text-align: center; 
   box-shadow: 0,14px,14px,0 rgba(0, 0, 0, 0.2);
-  position: relative;
-
+ 
 }
 
-
+.container{
+  flex: 1;
+}
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: rgba(0,0,0,0.5);
   text-align: center;
   height: 30px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }

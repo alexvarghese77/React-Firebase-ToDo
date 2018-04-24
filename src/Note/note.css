@@ -1,14 +1,23 @@
 
 .note{
+    padding:10px 10px 38px 34px;
+    height: auto; 
+    margin: auto;
+    margin-bottom: 8px;
     width: 60%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+    color: #222;
+    background-color: #eed; 
     border-radius: 3px;
-    margin:auto;
-    height: auto;
-    margin-bottom: 5px;
     box-shadow: 43x 3px 2px #333;
     opacity: 1;
-    background-color: #eed; 
-    padding:10px 10px 38px 34px;
+}
+.noteContent{
+    float:left;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  display: block;
 }
 .closeBtn{
     float: right;

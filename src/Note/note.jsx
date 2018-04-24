@@ -7,7 +7,9 @@ export default class Note extends Component{
         return(
             <div className="center">
                 <div className="note">
-                  {this.props.noteContent}
+                <div className="noteContent">
+                     {this.props.noteContent}
+                </div>  
                   <span className="closeBtn" onClick={()=>this.props.delNote(this.props.noteId)}>X</span>
                 </div>
             

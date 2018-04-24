@@ -1,6 +1,6 @@
 .noteInput{
-    width: 800px;
-    min-width: 800px;
+    width: 60%;
+    min-width: 60%;
     font-size: 1.3em;
     padding-left: 20px;
     border-top-left-radius: 4px;
@@ -27,4 +27,12 @@
     color: #fff;
     transition: 0.2s ease-out;
 }
-
+.notewrappercontainer{
+    display: flex;
+}
+.spacer{
+    flex: 1;
+}
+.notewrpper{
+     flex: 2;
+}
