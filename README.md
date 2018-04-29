@@ -10,4 +10,8 @@ A simple CRUD application to explore React and Firebase interaction. provides th
 1. Run npm install
 1. npm start
 
+
 Live Demo: https://react-todo-26219.firebaseapp.com/
+
+## Screenshot
+![alt text](https://raw.githubusercontent.com/alexvarghese77/React-Firebase-ToDo/master/src/img/to do screenshot.png)
