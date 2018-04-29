@@ -14,4 +14,4 @@ A simple CRUD application to explore React and Firebase interaction. provides th
 Live Demo: https://react-todo-26219.firebaseapp.com/
 
 ## Screenshot
-![alt text](https://raw.githubusercontent.com/alexvarghese77/React-Firebase-ToDo/master/src/img/to do screenshot.png)
+![alt text](https://raw.githubusercontent.com/alexvarghese77/React-Firebase-ToDo/master/src/img/screenshot.png)
